@@ -82,7 +82,7 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<!-- 不添加版本会报错 (大概是因为本机mysql版本) -->
-			<version>5.1.47</version>
+			<!-- <version>5.1.47</version> -->
 			<scope>runtime</scope>
 		</dependency>
 
