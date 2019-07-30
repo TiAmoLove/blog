@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.form-signin{
+	text-align: center;
+}
+.signin-img{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	height:120px;
+	width:150px;
+	border-radius: 5%;
+}
+.form-signin{
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+}
