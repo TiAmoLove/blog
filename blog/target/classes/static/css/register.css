@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+.form-register{
+	width: 100%;
+	max-width: 60%;
+	padding: 15px;
+	margin: auto;
+}
+
+
+.register-font{
+	letter-spacing: 5px;
+	color: #696969;
+	float: none;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.form-register label{
+	font-style: italic;
+}
