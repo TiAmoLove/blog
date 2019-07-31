@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
+.img-ling img{
+    		height:50px;
+    		width:50px;
+    		border-radius: 50%;
+    		margin-left : 10px;
+    		margin-right: 40px;
+}
+
+.null-div {
+	margin: 5px
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
