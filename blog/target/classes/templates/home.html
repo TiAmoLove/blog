@@ -4,31 +4,9 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
 <link th:href="@{css/boot/bootstrap.min.css}" rel="stylesheet" type="text/css" >
-<link href="css/style.css" rel="stylesheet" type="text/css" >
-<link href="css/home.css" rel="stylesheet" type="text/css" >
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-	  
-
-	  
-    </style>
-	
-	<!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<link th:href="@{css/style.css}" rel="stylesheet" type="text/css" >
+<link th:href="@{css/home.css}" rel="stylesheet" type="text/css" >
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     
 </head>
 <body>
@@ -43,14 +21,14 @@
       <div class="col-4 d-flex justify-content-end align-items-center">
       	
       	
-        <a class="btn btn-outline-primary" href="#">登 录</a>
+        <a class="btn btn-outline-primary" href="login">登 录</a>
 		<div class="null-div">
 		</div>
 		<a class="btn btn-outline-primary" href="#">注 册</a>
 		
 		
 		<div sec:authorize="hasRole('ROLE_USER')" class="img-ling">
-			<a href="me.html">
+			<a href="me">
       		<img src="img/kala.jpg" />
       		</a>
       	</div>
@@ -64,7 +42,7 @@
     <nav class="nav d-flex justify-content-between">
       <a class="p-2 text-muted" href="#">分类标签</a>
     </nav>
-  </div>
+  	</div>
 
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
