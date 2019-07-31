@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+
+.null-div {
+	margin: 5px
+}
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
