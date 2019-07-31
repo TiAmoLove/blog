@@ -25,6 +25,7 @@ public class User {
 
     private Date createTime;
 
+    
     public Long getId() {
         return id;
     }
