@@ -1,11 +1,39 @@
 @charset "UTF-8";
 
+.from-article{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.article-title{
+	font-size: 30px;
+	color: #696969;
+	
+}
+
+
 .toolbar{
+	
 	border: 1px solid #ccc;
 }
 
 .editor-text{
-	min-height: 800px;
+	min-height: 500px;
 	border: 1px solid #ccc;
-	
+    height: 500px;
+    
 }
+
+.button-btn{
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+

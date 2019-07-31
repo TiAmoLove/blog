@@ -18,18 +18,35 @@
       <div class="col-4 pt-1">
         <a class="blog-header-logo text-dark" href="home">BLOG</a>
       </div>
+      
+      <div class="col-4 d-flex justify-content-end align-items-center">
+		<div class="img-ling">
+			<a href="me">
+      		<img src="img/kala.jpg" />
+      		</a>
+      </div>
     </div>
-</header>
-  
-	<div id="toolbar" class="toolbar">
+      
     </div>
-    <hr>
-    <div id="editor-text" class="editor-text">
-    </div>
-
     
-  
- 
+</header>
+
+		<form class="from-article">
+			<div class="mb-3">
+				<label class="article-title">文章标题</label> <input type="text"
+					class="form-control">
+			</div>
+			<!-- 富文本编辑框头部 Start -->
+			<div id="toolbar" class="toolbar"></div>
+			<!-- 具体框体 -->
+			<div id="editor-text" class="editor-text"></div>
+			<!-- end -->
+			<div class="button-btn">
+				<button type="button" class="btn btn-primary">发表文章</button>
+			</div>
+		</form>
+
+
 
 </div>
 
@@ -40,17 +57,6 @@
   </p>
 </footer>
 <script type="text/javascript" src="editor/wangEditor.min.js"></script>
-    <script type="text/javascript">
-        var E = window.wangEditor;
-        var editor = new E('#toolbar', 'editor-text');  // 两个参数也可以传入 elem 对象，class 选择器
-     	// 自定义菜单配置
-        editor.customConfig.menus = [
-            'head',
-            'bold',
-            'italic',
-            'underline'
-        ];
-        editor.create()
-</script>
+<script type="text/javascript" src="js/article.js"></script>
 </body>
 </html>
