@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn"
+	xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<link th:href="@{css/boot/bootstrap.min.css}" rel="stylesheet" type="text/css" >
+<link th:href="@{css/style.css}" rel="stylesheet" type="text/css" >
+<link th:href="@{css/article.css}" rel="stylesheet" type="text/css" >
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta charset="UTF-8">
+<title>写博客</title>
+
+</head>
+<body>
+<div class="container">
+<header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="blog-header-logo text-dark" href="home">BLOG</a>
+      </div>
+    </div>
+</header>
+  
+	<div id="toolbar" class="toolbar">
+    </div>
+    <hr>
+    <div id="editor-text" class="editor-text">
+    </div>
+
+    
+  
+ 
+
+</div>
+
+<footer class="blog-footer">
+  <p>你看这个碗,它又大又圆 <a href="#">Spring Boot</a> by zhou<a href="#"> </a>.</p>
+  <p>
+    <a href="#">Yao ao ao ao!</a>
+  </p>
+</footer>
+<script type="text/javascript" src="editor/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor;
+        var editor = new E('#toolbar', 'editor-text');  // 两个参数也可以传入 elem 对象，class 选择器
+     	// 自定义菜单配置
+        editor.customConfig.menus = [
+            'head',
+            'bold',
+            'italic',
+            'underline'
+        ];
+        editor.create()
+</script>
+</body>
+</html>
