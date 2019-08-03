@@ -52,10 +52,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/user/**").hasRole("USER").antMatchers("/admin/**").hasRole("ADMIN")
-				.anyRequest().permitAll().and().formLogin().loginPage("/login").defaultSuccessUrl("/user").and()
-				.logout().logoutUrl("/logout").logoutSuccessUrl("/login");
-
+		http
+			.authorizeRequests()
+			.antMatchers("/user/**").hasRole("USER")
+			.antMatchers("/admin/**").hasRole("ADMIN").anyRequest().permitAll()
+			.and()
+			.formLogin().loginPage("/login").defaultSuccessUrl("/user")
+			.and()
+			.logout().logoutUrl("/logout").logoutSuccessUrl("/login");
+		// 关闭CSRF跨域
+		http.csrf().disable();
 	}
 
 	/**
